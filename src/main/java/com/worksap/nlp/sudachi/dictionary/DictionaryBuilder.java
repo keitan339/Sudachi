@@ -121,7 +121,7 @@ public class DictionaryBuilder {
                     || cols[4].length() > MAX_LENGTH
                     || cols[11].length() > MAX_LENGTH
                     || cols[12].length() > MAX_LENGTH) {
-                    throw new IllegalArgumentException("string is too long");
+                    continue;
                 }
 
                 if (cols[0].length() == 0) {
